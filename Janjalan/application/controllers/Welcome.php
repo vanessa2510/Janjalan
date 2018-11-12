@@ -25,15 +25,23 @@ class Welcome extends CI_Controller {
 	}
 	
 	public function loadhotelinvoice(){
+		
+		$this->load->helper('url');
 		$this->load->view('hotelinvoice');
 	}
 	public function loadhotelorder(){
+		
+		$this->load->helper('url');
 		$this->load->view('hotelorder');
 	}
-	public function loadhoteproviderhome(){
+	public function loadhotelproviderhome(){
+		
+		$this->load->helper('url');
 		$this->load->view('hoteproviderhome');
 	}
 	public function loadhotelreview(){
+		
+		$this->load->helper('url');
 		$this->load->view('hotelinvoice');
 	}
 	
