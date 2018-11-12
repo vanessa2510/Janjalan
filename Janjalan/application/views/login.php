@@ -66,7 +66,7 @@ defined('BASEPATH') OR exit('No direct script access allowed');
 				<p>
 					Daftarkan penginapan Anda!
 				</p>
-				<a href = "<?php echo base_url().toproviderhome ?>" class = "w3-btn w3-round w3-hover-lime w3-theme">
+				<a href = "<?php echo base_url().'toproviderhome' ?>" class = "w3-btn w3-round w3-hover-lime w3-theme">
 					Daftarkan <b>></b>
 				</a>
 			</div>

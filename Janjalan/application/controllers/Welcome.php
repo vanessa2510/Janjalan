@@ -37,7 +37,7 @@ class Welcome extends CI_Controller {
 	public function loadhotelproviderhome(){
 		
 		$this->load->helper('url');
-		$this->load->view('hoteproviderhome');
+		$this->load->view('hotelproviderhome');
 	}
 	public function loadhotelreview(){
 		
