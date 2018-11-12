@@ -28,10 +28,10 @@ defined('BASEPATH') OR exit('No direct script access allowed');
 <!-- NAV BAR -->
 	<div class = "w3-top">
 		<div class = "w3-bar w3-theme-d3 w3-card w3-large">
-			<a HREF = "hotelproviderhome.html" class = "w3-bar-item w3-hover-white">Manajemen Hotel</a>
-			<a HREF = "hotelorder.html" class = "w3-bar-item w3-hover-white">Pesanan</a>
-			<a HREF = "hotelreview.html" class = "w3-bar-item w3-hover-lime w3-theme">Ulasan</a>
-			<a HREF = "hotelinvoice.html" class = "w3-bar-item w3-hover-white">Bukti Pembayaran</a>
+			<a HREF = "<?php echo base_url().toproviderhome?>" class = "w3-bar-item w3-hover-white">Manajemen Hotel</a>
+			<a HREF = "<?php echo base_url().toorder?>" class = "w3-bar-item w3-hover-white">Pesanan</a>
+			<a HREF = "<?php echo base_url().toreview?>" class = "w3-bar-item w3-hover-lime w3-theme">Ulasan</a>
+			<a HREF = "<?php echo base_url().toinvoice?>" class = "w3-bar-item w3-hover-white">Bukti Pembayaran</a>
 			<a HREF = "#" class = "w3-bar-item w3-hover-white">Profil</a>
 		</div>
 	</div>
