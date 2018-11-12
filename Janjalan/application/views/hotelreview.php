@@ -9,7 +9,7 @@ defined('BASEPATH') OR exit('No direct script access allowed');
 	<link rel="stylesheet" href= "<?php echo base_url().'assets/css/font-awesome.min.css'?>">
 	<link rel="stylesheet" href= "<?php echo base_url().'assets/css/font-awesome.css'?>">
 	<link rel="stylesheet" href= "<?php echo base_url().'assets/css/w3-theme-w3schools.css'?>">			
-	<link rel="stylesheet" href= "<?php echo base_url().'/css/w3.css'?>">
+	<link rel="stylesheet" href= "<?php echo base_url().'assets/css/w3.css'?>">
 	<link rel="stylesheet" href= "<?php echo base_url().'assets/css/font-awesome.min.css'?>">
 	<link rel="stylesheet" href= "https://fonts.googleapis.com/css?family=Lato">
 	<link rel="stylesheet" href= "https://fonts.googleapis.com/css?family=Montserrat">
