@@ -1,0 +1,119 @@
+<?php
+defined('BASEPATH') OR exit('No direct script access allowed');
+?>
+
+<!DOCTYPE html>
+<head>
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	
+	<link rel="stylesheet" href= "<?php echo base_url().'assets/css/font-awesome.min.css'?>">
+	<link rel="stylesheet" href= "<?php echo base_url().'assets/css/font-awesome.css'?>">
+	<link rel="stylesheet" href= "<?php echo base_url().'assets/css/w3-theme-w3schools.css'?>">			
+	<link rel="stylesheet" href= "<?php echo base_url().'/css/w3.css'?>">
+	<link rel="stylesheet" href= "<?php echo base_url().'assets/css/font-awesome.min.css'?>">
+	<link rel="stylesheet" href= "https://fonts.googleapis.com/css?family=Lato">
+	<link rel="stylesheet" href= "https://fonts.googleapis.com/css?family=Montserrat">
+	<link rel="stylesheet" href= "https://fonts.googleapis.com/css?family=Raleway">
+	
+	<style>
+		body,h1,h2,h3,h4,h5,h6 {font-family:"MONTSERRAT", sans-serif}
+		a{text-decoration:none}
+		
+		.thumbnail {
+			border: 1px solid #ddd;
+			border-radius: 4px;
+			padding: 5px;
+			width: 150px;
+		}
+
+		.thumbnail:hover{
+			box-shadow: 0 0 2px 1px rgba(0, 140, 186, 0.5);
+		}
+		
+	</style>
+
+	<title>JanJalan: HOME</title>
+</head>
+
+<body>
+<!-- NAV BAR -->
+	<div class = "w3-top">
+		<div class = "w3-bar w3-theme-d3 w3-card w3-large">
+			<a HREF = "hotelproviderhome.html" class = "w3-bar-item w3-hover-white">Manajemen Hotel</a>
+			<a HREF = "hotelorder.html" class = "w3-bar-item w3-hover-white">Pesanan</a>
+			<a HREF = "hotelreview.html" class = "w3-bar-item w3-hover-white">Ulasan</a>
+			<a HREF = "hotelinvoice.html" class = "w3-bar-item w3-hover-lime w3-theme">Bukti Pembayaran</a>
+			<a HREF = "#" class = "w3-bar-item w3-hover-white">Profil</a>
+		</div>
+	</div>
+	
+
+<!-- INTENTIONAL EMPTY -->
+	<DIV STYLE = "height: 80px">
+	</DIV>
+
+	
+<!-- SIDEBAR -->
+	<div class = "">
+	</div>
+	
+<!-- MAIN CONTENT -->
+	<DIV CLASS = "w3-display-container w3-card" style = "width:75%; margin:0 auto">
+		<div class = "w3-container w3-padding w3-theme-d3">
+			<h3>Bukti Pembayaran Pelanggan</h3>
+		</div>
+		
+		<div class = "w3-container" >
+			<div class = "w3-leftbar w3-border-green w3-hover-shadow w3-display-container w3-card w3-panel w3-margin w3-padding-large">
+				<div class = "w3-quarter">
+					<img class = "w3-circle" src = "../gallery/aot.jpg" width="100%"></img>
+				</div>
+				<div class = "w3-rest w3-padding">
+					<div class = "w3-text-theme w3-padding w3-rest" style = "font-size: 20pt">Made Agus</div>
+					<div class = "w3-border-top w3-padding ">
+						<img class = "thumbnail" src = "../gallery/struk.jpg" style = ""></img>
+					</div>
+					<div class = "w3-margin w3-padding">
+						Diunggah pada tanggal 29 September 2014
+					</div>
+				</div>
+			</div>
+			
+			<div class = "w3-leftbar w3-border-green w3-hover-shadow w3-display-container w3-card w3-panel w3-margin w3-padding-large">
+				<div class = "w3-quarter">
+					<img class = "w3-circle" src = "../gallery/aot.jpg" width="100%"></img>
+				</div>
+				<div class = "w3-rest w3-padding">
+					<div class = "w3-text-theme w3-padding w3-rest" style = "font-size: 20pt">Hartono</div>
+					<div class = "w3-border-top w3-padding ">
+						<img class = "thumbnail" src = "../gallery/struk.jpg" style = ""></img>
+					</div>
+					<div class = "w3-margin w3-padding">
+						Diunggah pada tanggal 29 September 2014
+					</div>
+				</div>
+			</div>
+			
+			<div class = "w3-leftbar w3-border-green w3-hover-shadow w3-display-container w3-card w3-panel w3-margin w3-padding-large">
+				<div class = "w3-quarter">
+					<img class = "w3-circle" src = "../gallery/aot.jpg" width="100%"></img>
+				</div>
+				<div class = "w3-rest w3-padding">
+					<div class = "w3-text-theme w3-padding w3-rest" style = "font-size: 20pt">Made In China</div>
+					<div class = "w3-border-top w3-padding ">
+						<img class = "thumbnail" src = "../gallery/struk.jpg" style = ""></img>
+					</div>
+					<div class = "w3-margin w3-padding">
+						Diunggah pada tanggal 29 September 2014
+					</div>
+				</div>
+			</div>
+		</div>
+	</DIV>
+	
+<!-- FOOTER -->
+	<DIV CLASS = "w3-container w3-theme-d4 w3-margin-top w3-padding-32" style = "height: 300px">
+		
+	</DIV>
+	
+</body>
