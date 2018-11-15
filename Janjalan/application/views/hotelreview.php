@@ -6,11 +6,11 @@ defined('BASEPATH') OR exit('No direct script access allowed');
 <head>
 	<meta name="viewport" content="width=device-width, initial-scale=1">
 	
-	<link rel="stylesheet" href= "<?php echo base_url().'assets/css/font-awesome.min.css'?>">
-	<link rel="stylesheet" href= "<?php echo base_url().'assets/css/font-awesome.css'?>">
-	<link rel="stylesheet" href= "<?php echo base_url().'assets/css/w3-theme-w3schools.css'?>">			
-	<link rel="stylesheet" href= "<?php echo base_url().'assets/css/w3.css'?>">
-	<link rel="stylesheet" href= "<?php echo base_url().'assets/css/font-awesome.min.css'?>">
+	<link rel="stylesheet" href= "<?php echo 'http://localhost/janjalan/assets/css/font-awesome.min.css'?>">
+	<link rel="stylesheet" href= "<?php echo 'http://localhost/janjalan/assets/css/font-awesome.css'?>">
+	<link rel="stylesheet" href= "<?php echo 'http://localhost/janjalan/assets/css/w3-theme-w3schools.css'?>">			
+	<link rel="stylesheet" href= "<?php echo 'http://localhost/janjalan/assets/css/w3.css'?>">
+	<link rel="stylesheet" href= "<?php echo 'http://localhost/janjalan/assets/css/font-awesome.min.css'?>">
 	<link rel="stylesheet" href= "https://fonts.googleapis.com/css?family=Lato">
 	<link rel="stylesheet" href= "https://fonts.googleapis.com/css?family=Montserrat">
 	<link rel="stylesheet" href= "https://fonts.googleapis.com/css?family=Raleway">
@@ -28,10 +28,10 @@ defined('BASEPATH') OR exit('No direct script access allowed');
 <!-- NAV BAR -->
 	<div class = "w3-top">
 		<div class = "w3-bar w3-theme-d3 w3-card w3-large">
-			<a HREF = "<?php echo base_url().toproviderhome?>" class = "w3-bar-item w3-hover-white">Manajemen Hotel</a>
-			<a HREF = "<?php echo base_url().toorder?>" class = "w3-bar-item w3-hover-white">Pesanan</a>
-			<a HREF = "<?php echo base_url().toreview?>" class = "w3-bar-item w3-hover-lime w3-theme">Ulasan</a>
-			<a HREF = "<?php echo base_url().toinvoice?>" class = "w3-bar-item w3-hover-white">Bukti Pembayaran</a>
+			<a HREF = "<?php echo base_url().'toproviderhome'?>" class = "w3-bar-item w3-hover-white">Manajemen Hotel</a>
+			<a HREF = "<?php echo base_url().'toorder'?>" class = "w3-bar-item w3-hover-white">Pesanan</a>
+			<a HREF = "<?php echo base_url().'toreview'?>" class = "w3-bar-item w3-hover-lime w3-theme">Ulasan</a>
+			<a HREF = "<?php echo base_url().'toinvoice'?>" class = "w3-bar-item w3-hover-white">Bukti Pembayaran</a>
 			<a HREF = "#" class = "w3-bar-item w3-hover-white">Profil</a>
 		</div>
 	</div>

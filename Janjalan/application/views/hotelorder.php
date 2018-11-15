@@ -5,11 +5,11 @@ defined('BASEPATH') OR exit('No direct script access allowed');
 <head>
 	<meta name="viewport" content="width=device-width, initial-scale=1">
 
-	<link rel="stylesheet" href= "<?php echo base_url().'assets/css/font-awesome.min.css'?>">
-	<link rel="stylesheet" href= "<?php echo base_url().'assets/css/font-awesome.css'?>">
-	<link rel="stylesheet" href= "<?php echo base_url().'assets/css/w3-theme-w3schools.css'?>">			
-	<link rel="stylesheet" href= "<?php echo base_url().'assets/css/w3.css'?>">
-	<link rel="stylesheet" href= "<?php echo base_url().'assets/css/font-awesome.min.css'?>">
+	<link rel="stylesheet" href= "<?php echo 'http://localhost/janjalan/assets/css/font-awesome.min.css'?>">
+	<link rel="stylesheet" href= "<?php echo 'http://localhost/janjalan/assets/css/font-awesome.css'?>">
+	<link rel="stylesheet" href= "<?php echo 'http://localhost/janjalan/assets/css/w3-theme-w3schools.css'?>">			
+	<link rel="stylesheet" href= "<?php echo 'http://localhost/janjalan/assets/css/w3.css'?>">
+	<link rel="stylesheet" href= "<?php echo 'http://localhost/janjalan/assets/css/font-awesome.min.css'?>">
 	<link rel="stylesheet" href= "https://fonts.googleapis.com/css?family=Lato">
 	<link rel="stylesheet" href= "https://fonts.googleapis.com/css?family=Montserrat">
 	<link rel="stylesheet" href= "https://fonts.googleapis.com/css?family=Raleway">
@@ -27,10 +27,10 @@ defined('BASEPATH') OR exit('No direct script access allowed');
 <!-- NAV BAR -->
 	<div class = "w3-top">
 		<div class = "w3-bar w3-theme-d3 w3-card w3-large">
-			<a HREF = "<?php echo base_url().toproviderhome?>" class = "w3-bar-item w3-hover-white">Manajemen Hotel</a>
-			<a HREF = "<?php echo base_url().toorder?>" class = "w3-bar-item w3-hover-lime w3-theme">Pesanan</a>
-			<a HREF = "<?php echo base_url().toreview?>" class = "w3-bar-item w3-hover-white">Ulasan</a>
-			<a HREF = "<?php echo base_url().toinvoice?>" class = "w3-bar-item w3-hover-white">Bukti Pembayaran</a>
+			<a HREF = "<?php echo base_url().'toproviderhome'?>" class = "w3-bar-item w3-hover-white">Manajemen Hotel</a>
+			<a HREF = "<?php echo base_url().'toorder'?>" class = "w3-bar-item w3-hover-lime w3-theme">Pesanan</a>
+			<a HREF = "<?php echo base_url().'toreview'?>" class = "w3-bar-item w3-hover-white">Ulasan</a>
+			<a HREF = "<?php echo base_url().'toinvoice'?>" class = "w3-bar-item w3-hover-white">Bukti Pembayaran</a>
 			<a HREF = "#" class = "w3-bar-item w3-hover-white">Profil</a>
 		</div>
 	</div>
@@ -52,7 +52,33 @@ defined('BASEPATH') OR exit('No direct script access allowed');
 		</div>
 		
 		<div class = "w3-container" >
+			<?php foreach($isipesanan as $everything){?>
 			<div class = "w3-leftbar w3-border-green w3-hover-shadow w3-display-container w3-card w3-panel w3-margin w3-padding-large">
+				<div class = "w3-quarter">
+					<img class = "w3-circle" src = "../gallery/aot.jpg" width="100%"></img>
+				</div>
+				<div class = "w3-rest w3-padding">
+					<div class = "w3-text-theme w3-padding w3-rest" style = "font-size: 20pt"><?php echo $everything->id ?></div>
+					<div class = "w3-border-top w3-padding "><?php echo $everything->jumlahmalam ?> Malam</div>
+				</div>
+				
+				<div class = "w3-display-topright"><button class = "w3-button w3-red">Batalkan</button></div>
+			</div>
+			<?php } ?>
+		
+			<!--div class = "w3-leftbar w3-border-green w3-hover-shadow w3-display-container w3-card w3-panel w3-margin w3-padding-large">
+				<div class = "w3-quarter">
+					<img class = "w3-circle" src = "../gallery/aot.jpg" width="100%"></img>
+				</div>
+				<div class = "w3-rest w3-padding">
+					<div class = "w3-text-theme w3-padding w3-rest" style = "font-size: 20pt">Aldiansyah</div>
+					<div class = "w3-border-top w3-padding ">3 Malam</div>
+				</div>
+				
+				<div class = "w3-display-topright"><button class = "w3-button w3-red">Batalkan</button></div>
+			</div-->
+			
+			<!--div class = "w3-leftbar w3-border-green w3-hover-shadow w3-display-container w3-card w3-panel w3-margin w3-padding-large">
 				<div class = "w3-quarter">
 					<img class = "w3-circle" src = "../gallery/aot.jpg" width="100%"></img>
 				</div>
@@ -110,19 +136,7 @@ defined('BASEPATH') OR exit('No direct script access allowed');
 				</div>
 				
 				<div class = "w3-display-topright"><button class = "w3-button w3-red">Batalkan</button></div>
-			</div>
-			
-			<div class = "w3-leftbar w3-border-green w3-hover-shadow w3-display-container w3-card w3-panel w3-margin w3-padding-large">
-				<div class = "w3-quarter">
-					<img class = "w3-circle" src = "../gallery/aot.jpg" width="100%"></img>
-				</div>
-				<div class = "w3-rest w3-padding">
-					<div class = "w3-text-theme w3-padding w3-rest" style = "font-size: 20pt">Aldiansyah</div>
-					<div class = "w3-border-top w3-padding ">3 Malam</div>
-				</div>
-				
-				<div class = "w3-display-topright"><button class = "w3-button w3-red">Batalkan</button></div>
-			</div>
+			</div-->
 			
 		</div>
 	</DIV>

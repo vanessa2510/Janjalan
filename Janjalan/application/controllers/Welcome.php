@@ -18,32 +18,43 @@ class Welcome extends CI_Controller {
 	 * map to /index.php/welcome/<method_name>
 	 * @see https://codeigniter.com/user_guide/general/urls.html
 	 */
+	 
+	 
+	function __construct(){
+		parent::__construct();
+		$this->load->model('modeljanjalan');
+	}
+	
+	public function getpesanan(){
+		$data['isipesanan'] = $this->modeljanjalan->getpesanan()->result();
+		$this->load->view('hotelorder',$data);
+	}
+	
+	public function getcustomer(){
+		$data['customer'] = $this->model_pesanan->get('customer')->result();
+		$this->load->view('pesanan',$data);
+	}
+	 	
 	public function index()
-	{
-		$this->load->helper('url');
+	{	$this->load->helper('url');
 		$this->load->view('login');
 	}
 	
-	public function loadhotelinvoice(){
-		
-		$this->load->helper('url');
+	public function loadhotelinvoice()
+	{	$this->load->helper('url');
 		$this->load->view('hotelinvoice');
 	}
-	public function loadhotelorder(){
-		
-		$this->load->helper('url');
+	
+	public function loadhotelorder()
+	{	$this->load->helper('url');
 		$this->load->view('hotelorder');
 	}
-	public function loadhotelproviderhome(){
-		
-		$this->load->helper('url');
+	public function loadhotelproviderhome()
+	{	$this->load->helper('url');
 		$this->load->view('hotelproviderhome');
 	}
-	public function loadhotelreview(){
-		
-		$this->load->helper('url');
-		$this->load->view('hotelinvoice');
+	public function loadhotelreview()
+	{	$this->load->helper('url');
+		$this->load->view('hotelreview');
 	}
-	
-	
 }
