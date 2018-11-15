@@ -64,22 +64,24 @@ defined('BASEPATH') OR exit('No direct script access allowed');
 		</div>
 		
 		<div class = "w3-container" >
+		<?php foreach($isi as $everything){?>
 			<div class = "w3-leftbar w3-border-green w3-hover-shadow w3-display-container w3-card w3-panel w3-margin w3-padding-large">
 				<div class = "w3-quarter">
 					<img class = "w3-circle" src = "../gallery/aot.jpg" width="100%"></img>
 				</div>
 				<div class = "w3-rest w3-padding">
-					<div class = "w3-text-theme w3-padding w3-rest" style = "font-size: 20pt">Made Agus</div>
+					<div class = "w3-text-theme w3-padding w3-rest" style = "font-size: 20pt"><?php echo $everything-> namacustomer ?></div>
 					<div class = "w3-border-top w3-padding ">
-						<img class = "thumbnail" src = "../gallery/struk.jpg" style = ""></img>
+						<img class = "thumbnail" src = "http://localhost/janjalan/assets/gallery/bukti/<?php echo $everything -> gambar ?>" style = ""></img>
 					</div>
 					<div class = "w3-margin w3-padding">
 						Diunggah pada tanggal 29 September 2014
 					</div>
 				</div>
 			</div>
+		<?php } ?>
 			
-			<div class = "w3-leftbar w3-border-green w3-hover-shadow w3-display-container w3-card w3-panel w3-margin w3-padding-large">
+			<!--div class = "w3-leftbar w3-border-green w3-hover-shadow w3-display-container w3-card w3-panel w3-margin w3-padding-large">
 				<div class = "w3-quarter">
 					<img class = "w3-circle" src = "../gallery/aot.jpg" width="100%"></img>
 				</div>
@@ -107,7 +109,7 @@ defined('BASEPATH') OR exit('No direct script access allowed');
 						Diunggah pada tanggal 29 September 2014
 					</div>
 				</div>
-			</div>
+			</div-->
 		</div>
 	</DIV>
 	

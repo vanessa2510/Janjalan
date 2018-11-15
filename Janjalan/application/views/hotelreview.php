@@ -53,28 +53,21 @@ defined('BASEPATH') OR exit('No direct script access allowed');
 		</div>
 		
 		<div class = "w3-container" >
+			<?php foreach($isipesanan as $everything){?>
 			<div class = "w3-leftbar w3-border-green w3-hover-shadow w3-display-container w3-card w3-panel w3-margin w3-padding-large">
 				<div class = "w3-quarter">
 					<img class = "w3-circle" src = "../gallery/aot.jpg" width="100%"></img>
 				</div>
 				<div class = "w3-rest w3-padding">
-					<div class = "w3-text-theme w3-padding w3-rest" style = "font-size: 20pt">Aldiansyah</div>
-					<div class = "w3-border-top w3-padding">
-						<i class="w3-textborder w3-text-yellow fa fa-star" aria-hidden="true" style = "font-size: 20pt; text-shadow: 3px 2px green"></i>
-						<i class="w3-textborder w3-text-yellow fa fa-star" aria-hidden="true" style = "font-size: 20pt; text-shadow: 3px 2px green"></i>
-						<i class="w3-textborder w3-text-yellow fa fa-star" aria-hidden="true" style = "font-size: 20pt; text-shadow: 3px 2px green"></i>
-						<i class="w3-textborder w3-text-yellow  fa fa-star" aria-hidden="true" style = "font-size: 20pt; text-shadow: 3px 2px green"></i>
-						<i class="w3-textborder w3-text-yellow  fa fa-star" aria-hidden="true" style = "font-size: 20pt; text-shadow: 3px 2px green"></i>
-					</div>
-					<div class = "w3-margin w3-padding">
-						Hotel bagus, nyaman, puas.
-					</div>
+					<div class = "w3-text-theme w3-padding w3-rest" style = "font-size: 20pt"><?php echo $everything->namacustomer ?></div>
+					<div class = "w3-padding ">Ulasan : <?php echo $everything->review ?> Malam</div>
 				</div>
 				
 				<!--div class = "w3-display-topright"><button class = "w3-button w3-red">Batalkan</button></div-->
 			</div>
+			<?php } ?>
 			
-			<div class = "w3-leftbar w3-border-green w3-hover-shadow w3-display-container w3-card w3-panel w3-margin w3-padding-large">
+			<!--div class = "w3-leftbar w3-border-green w3-hover-shadow w3-display-container w3-card w3-panel w3-margin w3-padding-large">
 				<div class = "w3-quarter">
 					<img class = "w3-circle" src = "../gallery/aot.jpg" width="100%"></img>
 				</div>
@@ -93,7 +86,7 @@ defined('BASEPATH') OR exit('No direct script access allowed');
 				</div>
 				
 				<!--div class = "w3-display-topright"><button class = "w3-button w3-red">Batalkan</button></div-->
-			</div>
+			<!--/div>
 			
 			<div class = "w3-leftbar w3-border-green w3-hover-shadow w3-display-container w3-card w3-panel w3-margin w3-padding-large">
 				<div class = "w3-quarter">
@@ -116,7 +109,7 @@ defined('BASEPATH') OR exit('No direct script access allowed');
 				<!--div class = "w3-display-topright"><button class = "w3-button w3-red">Batalkan</button></div-->
 			</div>
 			
-			<div class = "w3-leftbar w3-border-green w3-hover-shadow w3-display-container w3-card w3-panel w3-margin w3-padding-large">
+			<!--div class = "w3-leftbar w3-border-green w3-hover-shadow w3-display-container w3-card w3-panel w3-margin w3-padding-large">
 				<div class = "w3-quarter">
 					<img class = "w3-circle" src = "../gallery/aot.jpg" width="100%"></img>
 				</div>

@@ -30,6 +30,21 @@ class Welcome extends CI_Controller {
 		$this->load->view('hotelorder',$data);
 	}
 	
+	public function getreview(){
+		$data['isipesanan'] = $this->modeljanjalan->getpesanan()->result();
+		$this->load->view('hotelreview',$data);
+	}
+	
+	public function getkamar(){
+		$data['isipesanan'] = $this->modeljanjalan->getkamar()->result();
+		$this->load->view('hotelproviderhome',$data);
+	}
+	
+	public function getinvoice(){
+		$data['isi'] = $this->modeljanjalan->getinvoice()->result();
+		$this->load->view('hotelinvoice',$data);
+	}
+	
 	public function getcustomer(){
 		$data['customer'] = $this->model_pesanan->get('customer')->result();
 		$this->load->view('pesanan',$data);

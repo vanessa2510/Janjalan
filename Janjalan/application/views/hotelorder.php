@@ -58,8 +58,15 @@ defined('BASEPATH') OR exit('No direct script access allowed');
 					<img class = "w3-circle" src = "../gallery/aot.jpg" width="100%"></img>
 				</div>
 				<div class = "w3-rest w3-padding">
-					<div class = "w3-text-theme w3-padding w3-rest" style = "font-size: 20pt"><?php echo $everything->id ?></div>
+					<div class = "w3-text-theme w3-padding w3-rest" style = "font-size: 20pt"><?php echo $everything->namacustomer ?></div>
 					<div class = "w3-border-top w3-padding "><?php echo $everything->jumlahmalam ?> Malam</div>
+					<div class = "w3-padding ">Ulasan : <?php echo $everything->review ?> Malam</div>
+					<div class = "w3-padding ">Rating : 
+					<?php
+						for($i=1; $i<= $everything->rate ; $i++){
+						echo '<i class="w3-textborder w3-text-yellow fa fa-star" aria-hidden="true" style = "font-size: 20pt; text-shadow: 3px 2px green"></i>';
+					}?>
+					</div>
 				</div>
 				
 				<div class = "w3-display-topright"><button class = "w3-button w3-red">Batalkan</button></div>

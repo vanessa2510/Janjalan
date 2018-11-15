@@ -53,7 +53,16 @@ defined('BASEPATH') OR exit('No direct script access allowed');
 		
 		<div class = "w3-container" >
 		
+		<?php foreach($isipesanan as $everything){?>
 			<div class = "w3-quarter">
+				<div class = "w3-card w3-margin w3-topbar w3-border-green w3-hover-shadow">
+					<img src = "../gallery/aot.jpg" width = "100%"></img>
+					<div class = "w3-padding"><?php echo $everything-> namakamar ?></div>
+					<div class = "w3-padding w3-border-top">Harga: Rp. <?php echo $everything-> harga ?></div>
+				</div>
+			</div>
+		<?php } ?>
+			<!--div class = "w3-quarter">
 				<div class = "w3-card w3-margin w3-topbar w3-border-green w3-hover-shadow">
 					<img src = "../gallery/aot.jpg" width = "100%"></img>
 					<div class = "w3-padding">this room</div>
@@ -83,15 +92,7 @@ defined('BASEPATH') OR exit('No direct script access allowed');
 					<div class = "w3-padding">this room</div>
 					<div class = "w3-padding w3-border-top">Harga: Rp. 100000</div>
 				</div>
-			</div>
-			
-			<div class = "w3-quarter">
-				<div class = "w3-card w3-margin w3-topbar w3-border-green w3-hover-shadow">
-					<img src = "../gallery/aot.jpg" width = "100%"></img>
-					<div class = "w3-padding">this room</div>
-					<div class = "w3-padding w3-border-top">Harga: Rp. 100000</div>
-				</div>
-			</div>
+			</div-->
 			
 		</div>
 	</DIV>

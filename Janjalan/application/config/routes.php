@@ -54,7 +54,7 @@ $route['404_override'] = '';
 $route['translate_uri_dashes'] = FALSE;
 
 
-$route['toproviderhome'] = 'welcome/loadhotelproviderhome/';
+$route['toproviderhome'] = 'welcome/getkamar';
 $route['toorder'] = 'welcome/getpesanan';
-$route['toinvoice'] = 'welcome/loadhotelinvoice';
-$route['toreview'] = 'welcome/loadhotelreview';
+$route['toinvoice'] = 'welcome/getinvoice';
+$route['toreview'] = 'welcome/getreview';

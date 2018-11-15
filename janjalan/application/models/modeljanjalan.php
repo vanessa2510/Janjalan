@@ -10,12 +10,12 @@
 		}
 		function getpesanan(){
 			$this->load->database();
-			return $this->db->get('pesanan');
+			return $this->db->get('vw_pesanan');
 		}
 		function getinvoice(){
 			$this->load->database();
-			return $this->db->get('pembayaran');
-		}
+			return $this->db->get('vw_pembayaran');
+		}	
 		function getcustomer(){
 			$this->load->database();
 			return $this->db->get('customer');
