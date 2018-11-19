@@ -55,21 +55,70 @@ class Welcome extends CI_Controller {
 		$this->load->view('login');
 	}
 	
-	public function loadhotelinvoice()
-	{	$this->load->helper('url');
-		$this->load->view('hotelinvoice');
+	public function loadcustomerhome(){
+		$this->load->view('customer/tampilan');
 	}
 	
-	public function loadhotelorder()
-	{	$this->load->helper('url');
-		$this->load->view('hotelorder');
+	public function loadcustomerpembayaran(){
+		$this->load->view('customer/tampilanPembayaran');
 	}
-	public function loadhotelproviderhome()
-	{	$this->load->helper('url');
-		$this->load->view('hotelproviderhome');
+	
+	public function loadcustomerfinishedreview(){
+		$this->load->view('customer/selesaiReview');
 	}
-	public function loadhotelreview()
-	{	$this->load->helper('url');
-		$this->load->view('hotelreview');
+	
+	public function loadcustomerhoteldetails(){
+		$this->load->view('customer/rincianHotel');
 	}
+	
+	public function loadcustomerhotelreview(){
+		$this->load->view('customer/reviewHotel');
+	}
+	
+	public function loadcustomersuccesspayment(){
+		$this->load->view('customer/pembayaranSukses');
+	}
+	
+	public function loadcustomerguestinfo(){
+		$this->load->view('customer/informasiTamu' , $error);
+	}
+	
+	public function loadcustomerhotelresult(){
+		$this->load->view('customer/hasilPencarianHotel');
+	}
+	
+	public function loadcustomerhotelprice(){
+		$this->load->view('customer/hargaHotel');
+	}
+	
+	public function loadcustomerorder(){
+		$this->load->view('customer/checkPesanan');
+	}
+	
+	public function do_upload(){
+		$config['upload_path'] = 'http://localhost/janjalan/assets/gallery/bukti';
+        $config['allowed_types'] = 'gif|jpg|png';
+        $config['max_size'] = '0'; // No Limit
+        $config['max_width']  = '0'; // No Limit
+        $config['max_height']  = '0'; // No Limit
+
+        $this->load->library('upload', $config);
+        $this->upload->initialize($config);
+		
+		$input_name = "userfile";
+
+        if ( ! $this->upload->do_upload($input_name))
+        {
+            $error = array('error' => $this->upload->display_errors());
+            $this->load->view('customer/informasiTamu', $error);
+        }
+        else
+        {
+            $data = array('upload_data' => $this->upload->data());
+            $this->load->view('customer/informasiTamu');
+        }
+		
+	}
+	
+	
 }

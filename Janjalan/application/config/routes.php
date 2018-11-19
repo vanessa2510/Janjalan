@@ -58,3 +58,34 @@ $route['toproviderhome'] = 'welcome/getkamar';
 $route['toorder'] = 'welcome/getpesanan';
 $route['toinvoice'] = 'welcome/getinvoice';
 $route['toreview'] = 'welcome/getreview';
+
+$route['tocustomerhome'] = 'welcome/loadcustomerhome';
+$route['tocustomerpayment'] = 'welcome/loadcustomerpembayaran';
+$route['tocustomerfinishedreview'] = 'welcome/loadcustomerfinishedreview';
+$route['tocustomerhoteldetails'] = 'welcome/loadcustomerhoteldetails';
+$route['tocustomerhotelreview'] = 'welcome/loadcustomerhotelreview';
+$route['tocustomersuccesspayment'] = 'welcome/loadcustomersuccesspayment';
+$route['tocustomerguestinfo'] = 'welcome/loadcustomerguestinfo';
+$route['tocustomerhotelresult'] = 'welcome/loadcustomerhotelresult';
+$route['tocustomerhotelprice'] = 'welcome/loadcustomerhotelprice';
+$route['tocustomerorder'] = 'welcome/loadcustomerorder';
+
+$route['customerupload'] = 'welcome/do_upload';
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

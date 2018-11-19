@@ -72,4 +72,12 @@ defined('BASEPATH') OR exit('No direct script access allowed');
 			</div>
 		</div>
 	</div>
+	
+	<div>
+		<div class ="">
+				<a href = "<?php echo base_url().'tocustomerhome' ?>" class = "w3-btn w3-round w3-hover-lime w3-theme">
+					LOGIN SEBAGAI CUSTOMER <b>></b>
+				</a>
+		</div>	
+	</div>
 </body>

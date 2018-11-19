@@ -1,0 +1,107 @@
+<?php
+defined('BASEPATH') OR exit('No direct script access allowed');
+?>
+<!DOCTYPE html>
+<style>
+	ul{
+		list-style: none;
+	}
+table, th, td {
+    border: 1px solid black;
+    border-collapse: collapse;
+}
+th, td {
+    padding: 4px;
+    text-align: left;
+}
+.form1{
+	margin-left: 2%;
+}
+</style>
+<html>
+	<head>
+		<title> Janjalan </title>
+	</head>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+  <link rel="stylesheet" href= "http://localhost/janjalan/assets/css/font-awesome.min.css">
+	<link rel="stylesheet" href= "http://localhost/janjalan/assets/css/font-awesome.css">
+	<link rel="stylesheet" href= "http://localhost/janjalan/assets/css/w3-theme-w3schools.css">
+	<link rel="stylesheet" href= "http://localhost/janjalan/assets/css/w3.css">
+	<link rel="stylesheet" href= "http://localhost/janjalan/assets/lib/font-awesome.min.css">
+	<link rel="stylesheet" href= "http://localhost/janjalan/assets/lib/font-awesome.css">
+	<link rel="stylesheet" href= "http://localhost/janjalan/assets/lib/w3.css">
+	<link rel="stylesheet" href= "https://fonts.googleapis.com/css?family=Lato">
+	<link rel="stylesheet" href= "https://fonts.googleapis.com/css?family=Montserrat">
+	<link rel="stylesheet" href= "https://fonts.googleapis.com/css?family=Raleway">
+	<link rel="stylesheet" href= "https://use.fontawesome.com/releases/v5.4.1/css/all.css">
+  <body class="w3-light-grey">
+		<div class="w3-top">
+      <div class="" style="background-color: #f8f8f8;">
+        <!-- Navigation Bar -->
+        <div class="w3-bar w3-white w3-border-bottom w3-xlarge">
+          <a href="<?php echo base_url().'tocustomerhome' ?>" class="w3-bar-item w3-button w3-text-black w3-hover-lime"><b><i class="fa fa-bed w3-margin-right"></i>Janjalan</b></a>
+        </div>
+        <!-- Tampilan Bar Home -->
+        <div class="tampilanBar">
+          <div class = "w3-bar w3-theme-d3 w3-card w3-large">
+            <a HREF = "<?php echo base_url().'tocustomerhome' ?>" class = "w3-bar-item w3-hover-lime w3-theme">Home</a>
+            <a HREF = "#" class = "w3-bar-item w3-hover-lime">Tempat Rekreasi</a>
+            <a HREF = "<?php echo base_url().'tocustomerorder' ?>" class = "w3-bar-item w3-hover-lime">Check Pesanan</a>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class= "w3-theme-d3 w3-text-black" style="height:100%;">
+    <h2>PROSEDUR PEMBAYARAN
+    </div>
+		<div class="w3-bar w3-theme-d3 w3-display-middle" style="margin-top:50%;">
+		<header class="w3-display-container w3-content w3-hide-small" style="max-width:1500px">
+		      <img class="w3-image" src="http://localhost/janjalan/assets/gallery/picture/travel-3.jpg" alt="Travel" width="1500" height="700">
+		<div class="w3-display-middle" style="width:65%">
+ 			<div class="w3-bar w3-theme-d3">
+	 			<h2 style="margin-left:2%">PROSEDUR PEMBAYARAN</h2>
+ 			</div>
+ 		<div class="w3-container w3-white w3-padding-16">
+			<form>
+				<div class="w3-row-padding" style="margin:0 -16px;">
+					<div class="w3-half" style="margin-left:25%; margin-bottom:2%;">
+						<label><i class="fa fa-user"></i>Nama Lengkap</label>
+						<input class="w3-input w3-border" type="text" required>
+					</div>
+					<div class="w3-half w3-margin-bottom" style="margin-left:25%;">
+						<label><i class="fa fa-envelope"></i>Email</label>
+						<input class="w3-input w3-border" type="text" required>
+					</div>
+					<div class="w3-half" style="margin-left:25%;">
+						<label><i class="fa fa-phone"></i> Nomor Telepon</label>
+						<input class="w3-input w3-border" type="text" required>
+					</div>
+					<div class="w3-half" style="margin-left:25%;">
+						<label><i class="fa fa-child"></i> Jumlah Orang</label>
+						<input class="w3-input w3-border" type="text" required>
+					</div>
+				</div>
+				<a href="<?php echo base_url().'tocustomerguestinfo' ?>" class="w3-btn w3-black" type="submit" style="margin-left:42%; margin-top : 3%;"> SELANJUTNYA </a>
+
+			</form>
+			</div>
+		</div>
+	</header>
+
+
+			<!--<form style="margin-left:30%">
+  		Nama Lengkap<br>
+  		<input type="text" name="firstname"><br>
+  		Email<br>
+  		<input type="text" name="email"><br>
+  		Nomor Handphone<br>
+  		<input type="text" name="nohp"><br>
+  		<a href="informasiTamu.html" class="w3-button w3-black" style="margin-bottom:2%;margin-right:15%;margin-left:1%;margin-top: 1%">Selanjutnya</a>
+
+		</form> -->
+		</div>
+		<!-- Footer -->
+
+  </body>
+  </html>

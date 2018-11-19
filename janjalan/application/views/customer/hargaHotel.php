@@ -1,0 +1,84 @@
+<?php
+defined('BASEPATH') OR exit('No direct script access allowed');
+?><!DOCTYPE html>
+<style>
+	ul{
+		list-style: none;
+	}
+</style>
+<html>
+	<head>
+		<title> Janjalan </title>
+	</head>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+  <link rel="stylesheet" href= "http://localhost/janjalan/assets/css/font-awesome.min.css">
+	<link rel="stylesheet" href= "http://localhost/janjalan/assets/css/font-awesome.css">
+	<link rel="stylesheet" href= "http://localhost/janjalan/assets/css/w3-theme-w3schools.css">
+	<link rel="stylesheet" href= "http://localhost/janjalan/assets/css/w3.css">
+	<link rel="stylesheet" href= "http://localhost/janjalan/assets/lib/font-awesome.min.css">
+	<link rel="stylesheet" href= "http://localhost/janjalan/assets/lib/font-awesome.css">
+	<link rel="stylesheet" href= "http://localhost/janjalan/assets/lib/w3.css">
+	<link rel="stylesheet" href= "https://fonts.googleapis.com/css?family=Lato">
+	<link rel="stylesheet" href= "https://fonts.googleapis.com/css?family=Montserrat">
+	<link rel="stylesheet" href= "https://fonts.googleapis.com/css?family=Raleway">
+	<link rel="stylesheet" href= "https://use.fontawesome.com/releases/v5.4.1/css/all.css">
+
+  <body class="w3-light-grey">
+    <div class="w3-top">
+      <div class="" style="background-color: #f8f8f8;">
+        <!-- Navigation Bar -->
+        <div class="w3-bar w3-white w3-border-bottom w3-xlarge">
+          <a href="<?php echo base_url().'tocustomerhome' ?>" class="w3-bar-item w3-button w3-text-black w3-hover-lime"><b><i class="fa fa-bed w3-margin-right"></i>Janjalan</b></a>
+        </div>
+        <!-- Tampilan Bar Home -->
+        <div class="tampilanBar">
+          <div class = "w3-bar w3-theme-d3 w3-card w3-large">
+            <a HREF = "<?php echo base_url().'tocustomerhome' ?>" class = "w3-bar-item w3-hover-lime w3-theme">Home</a>
+            <a HREF = "#" class = "w3-bar-item w3-hover-lime">Tempat Rekreasi</a>
+            <a HREF = "<?php echo base_url().'tocustomerorder' ?>" class = "w3-bar-item w3-hover-lime">Check Pesanan</a>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- tampilan hasil pencarian -->
+		<header class="w3-display-container w3-content w3-hide-small" style="max-width:1500px">
+  		<img class="w3-image" src="http://localhost/janjalan/assets/gallery/picture/travel-3.jpg" alt="Travel" width="1500" height="700">
+      <div class = "w3-container w3-display-middle" style = "width:70%; margin-left:12%;">
+
+        <div class = "w3-bar w3-theme-d3" style="padding-left:2%;">
+          <h3> Hotel Padma</h3>
+        </div>
+
+        <div class="w3-container w3-light-grey">
+          <div class = "w3-leftbar w3-border-green w3-hover-shadow w3-display-container w3-card w3-panel w3-margin w3-padding-large">
+            <div class = "w3-quarter">
+              <img class = "w3-round" src = "http://localhost/janjalan/assets/gallery/picture/hotel-padma-twinbed.jpg" width="100%"></img>
+            </div>
+            <div class = "w3-rest w3-padding">
+              <p class = "w3-text-theme w3-padding w3-rest" style = "font-size: 15pt">Twin Bed</p>
+              <div class = "w3-border-top w3-padding "></div>
+                <div class="w3-text-theme w3-padding"> Harga : 399rb</div>
+                <a href="<?php echo base_url().'tocustomerpayment' ?>" class="w3-button w3-black" style="margin-left:250px; margin-top:5px;">PESAN</a>
+            </div>
+          </div>
+        </div>
+
+        <div class="w3-container w3-light-grey">
+          <div class = "w3-leftbar w3-border-green w3-hover-shadow w3-display-container w3-card w3-panel w3-margin w3-padding-large">
+            <div class = "w3-quarter">
+              <img class = "w3-round" src = "http://localhost/janjalan/assets/gallery/picture/hotel-padma-kingbed.jpg" width="100%"></img>
+            </div>
+            <div class = "w3-rest w3-padding">
+              <p class = "w3-text-theme w3-padding w3-rest" style = "font-size: 15pt">King Bed</p>
+              <div class = "w3-border-top w3-padding "></div>
+                <div class="w3-text-theme w3-padding"> Harga : 500rb</div>
+                <a href="<?php echo base_url().'tocustomerpayment' ?>" class="w3-button w3-black" style="margin-left:250px; margin-top:5px;">PESAN</a>
+            </div>
+          </div>
+        </div>
+    </header>
+
+	</body>
+</html>
